@@ -2,17 +2,29 @@ body {
     font-family: HK Grotesk;
     background-color: var(--color-bg);
   }
+.container {
+    display: flex;
+}
 
-  #map {
-    height: 400px;
-    width: 600px;
-    margin-left: 100px;
+.map-container {
+    flex: 1;
+}
+
+.graph-container {
+    flex: 1;
+    padding-top: 150px;
+}
+
+#map {
+  height: 400px;
+  width: 600px;
+  margin-left: 100px;
   
-  }
+}
   
-  .bar{
-    fill:navy;
-  }
+.bar{
+  fill:navy;
+}
 
   #filter{
     margin-top: 10px; 

@@ -17,7 +17,15 @@
 <body onload="Count()">
     
     <svg width=1500 height = 700></svg>
-    <div id="map"></div>
+    <div class="container">
+        <div class="map-container">
+            <div id="map"></div>
+        </div>
+        
+        <div class="graph-container">
+            <svg id="graph" width="1000" height="300"></svg>
+        </div>
+    </div>
     <div id="filter">
         <label>Date Filter: </label>
         <input type="checkbox" class="dateFilter" value="2016"> 2016
@@ -27,8 +35,9 @@
         <input type="checkbox" class="dateFilter" value="2020"> 2020
         <input type="checkbox" class="dateFilter" value="2021"> 2021
         <input type="checkbox" class="dateFilter" value="2022"> 2022
-        <!-- Add more checkboxes for different dates as needed -->
     </div>
+    
+    
     <script src="map.js"></script>
 </body>
 </html>
