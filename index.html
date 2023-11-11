@@ -5,15 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://d3js.org/d3.v5.min.js"></script>
     <script src="bargraph.js"></script>
-    <script src="map.js"></script>
+    <link rel = "stylesheet" href = "styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    
     <title>Document</title>
     <style>
-        .bar{
-            fill:navy;
-        }
+        
     </style>
 </head>
 <body onload="Count()">
+    
     <svg width=1500 height = 700></svg>
+    <div id="map"></div>
+    <div id="filter">
+        <label>Date Filter: </label>
+        <input type="checkbox" class="dateFilter" value="2016"> 2016
+        <input type="checkbox" class="dateFilter" value="2017"> 2017
+        <input type="checkbox" class="dateFilter" value="2018"> 2018
+        <input type="checkbox" class="dateFilter" value="2019"> 2019
+        <input type="checkbox" class="dateFilter" value="2020"> 2020
+        <input type="checkbox" class="dateFilter" value="2021"> 2021
+        <input type="checkbox" class="dateFilter" value="2022"> 2022
+        <!-- Add more checkboxes for different dates as needed -->
+    </div>
+    <script src="map.js"></script>
 </body>
 </html>

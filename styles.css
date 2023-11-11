@@ -1,0 +1,22 @@
+body {
+    font-family: HK Grotesk;
+    background-color: var(--color-bg);
+  }
+
+  #map {
+    height: 400px;
+    width: 600px;
+    margin-left: 100px;
+  
+  }
+  
+  .bar{
+    fill:navy;
+  }
+
+  #filter{
+    margin-top: 10px; 
+    margin-left: 100px;
+    margin-bottom: 100px;
+  }
+

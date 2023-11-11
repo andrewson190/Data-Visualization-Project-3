@@ -9,12 +9,15 @@ function Count() {
 
     var g = svg.append("g").attr("transform", "translate("+100+","+100+")");
 
-    d3.csv("Count-Only.csv").then(data =>{
 
+    d3.csv("Count-Only.csv").then(data =>{
+        console.log("-------->", data)
         xScale.domain(data.map(d => d.SPECIES));
-        yScale.domain([0, 3000]);
+        yScale.domain([0, 7500]);
 
         g.append("g")
+            .attr("class", "x-axis")
+            .attr("clip-path", "url(#clip-path)")
             .attr('transform', 'translate(0, '+height+')' )
             .call(d3.axisBottom(xScale))
             .selectAll("text")  
