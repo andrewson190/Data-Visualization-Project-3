@@ -19,6 +19,11 @@ h1 {
   margin-left: 100px;
 }
 
+#tip{
+  text-align: center;
+  font-size: 12px;
+}
+
 input[type="checkbox"] {
   accent-color: #2A7E19; 
 }
