@@ -35,8 +35,9 @@ d3.csv("coordinates.csv").then(data =>{
     points.forEach(function(point) {
         var popupContent = `<b>Name:</b> ${point.name}<br><b>Date:</b> ${point.date}<br><b>Tree Height:</b> ${point.treeheight}<br><b>Tree Diameter:</b> ${point.diameter}`;
         var marker = L.circle(point.latlng, {
-            radius: point.radius,
-            color: color[point.name], // Circle border color
+            radius: (point.radius/1.5),
+            weight: 1,
+            color: color[point.name],
             fillColor: color[point.name], // Circle fill color
             fillOpacity: 0.5 
         }).addTo(map).bindPopup(popupContent);
