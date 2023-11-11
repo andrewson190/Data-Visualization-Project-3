@@ -103,6 +103,12 @@ d3.csv("coordinates.csv").then(data =>{
         .attr("transform", `translate(0, ${height})`)
         .call(d3.axisBottom(x));
 
+    // x-axis label    
+    svg.append("text")
+        .attr("transform", `translate(${width / 2}, ${height + margin.top + 20})`)
+        .style("text-anchor", "middle")
+        .text("Tree Diameter");
+
     // Add y-axis
     svg.append("g")
         .attr("transform", `translate(${margin.left}, 0)`)

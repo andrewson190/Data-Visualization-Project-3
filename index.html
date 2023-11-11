@@ -9,23 +9,14 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
     
-    <title>Tree's Planted in Lawrence</title>
+    <title>Interactive Dashboard</title>
     <style>
         
     </style>
 </head>
 <body onload="Count()">
-    
-    <svg width=1500 height = 700></svg>
-    <div class="container">
-        <div class="map-container">
-            <div id="map"></div>
-        </div>
-        
-        <div class="graph-container">
-            <svg id="graph" width="1000" height="300"></svg>
-        </div>
-    </div>
+    <h1>Tree's Planted in Lawrence</h1>
+    <svg id = "graph1" width=1500 height = 700></svg>
     <div id="filter">
         <label>Date Filter: </label>
         <input type="checkbox" class="dateFilter" value="2016"> 2016
@@ -36,6 +27,16 @@
         <input type="checkbox" class="dateFilter" value="2021"> 2021
         <input type="checkbox" class="dateFilter" value="2022"> 2022
     </div>
+    <div class="container">
+        <div class="map-container">
+            <div id="map"></div>
+        </div>
+        
+        <div class="graph-container">
+            <svg id="graph" width="1500" height="1000"></svg>
+        </div>
+    </div>
+    
     
     
     <script src="map.js"></script>

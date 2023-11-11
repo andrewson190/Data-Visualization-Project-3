@@ -1,34 +1,60 @@
 body {
-    font-family: HK Grotesk;
-    background-color: var(--color-bg);
-  }
+  font-family: sans-serif;
+  background-color: #f5f5f5 ;
+}
+
+h1 {
+  background-color: #2A7E19;
+  text-align: center;
+  color: #f5f5f5;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.bar{
+  fill:#2A7E19;
+}
+
+#graph1 {
+  margin-left: 100px;
+}
+
+input[type="checkbox"] {
+  accent-color: #2A7E19; 
+}
+
+#filter{
+  position: center;
+  margin-top: 10px; 
+  margin-left: 480px;
+  margin-bottom: 30px;
+}
+
 .container {
-    display: flex;
+  display: flex;
 }
 
 .map-container {
-    flex: 1;
+  flex: 1;
+  margin: 0;
+  height: 300px;
+  width: 600px;
 }
 
 .graph-container {
-    flex: 1;
-    padding-top: 150px;
+  flex: 1;
+  padding-top: 75px;
+  margin-left: 250px;
+  margin-bottom: 100px;
 }
 
 #map {
   height: 400px;
   width: 600px;
   margin-left: 100px;
-  
-}
-  
-.bar{
-  fill:navy;
 }
 
-  #filter{
-    margin-top: 10px; 
-    margin-left: 100px;
-    margin-bottom: 100px;
-  }
-
+#graph {
+  height: 300px;
+  width: 600px;  
+}

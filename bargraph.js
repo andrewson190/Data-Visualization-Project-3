@@ -1,10 +1,6 @@
 function Count() {
-    
-
-    
-
     d3.csv("coordinates.csv").then(data =>{
-        var svg = d3.select("svg"),
+        var svg = d3.select("#graph1"),
         margin = 350,
         width = svg.attr("width") - margin,
         height = svg.attr("height") - margin;
@@ -13,6 +9,13 @@ function Count() {
         var yScale = d3.scaleLinear().domain([0, 7500]).range([height,0]);
 
         var g = svg.append("g").attr("transform", "translate("+100+","+100+")");
+        
+        svg.append("text")
+            .attr("x", width / 2)
+            .attr("y", margin / 4)
+            .attr("text-anchor", "middle")
+            .style("font-size", "20px")
+            .text("Total Trees Planted");
 
         g.append("g")
             .attr("class", "x-axis")
